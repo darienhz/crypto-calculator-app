@@ -11,7 +11,13 @@ class CurrenciesController < ApplicationController
   # Takes in currency id and amount owned
   # Returns final calculation
   def calculate
-
+    amount = params[:amount]
+    render json: {
+      currency: currency,
+      current_price: currency.current_price,
+      amount: amount,
+      value: currency.calculate_value(amount)
+    }
   end
 
   private
