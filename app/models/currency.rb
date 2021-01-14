@@ -7,6 +7,10 @@
 # end
 
 class Currency < ApplicationRecord
+  def calculate_value(amount)
+    (current_price.round(4) * amount.to_f).round(4)
+  end
+
   def current_price
     api_key = '26e005a9-3955-4825-8fdc-2b932148a436'
     url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
