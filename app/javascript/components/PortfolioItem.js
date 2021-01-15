@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class PortfolioContainer extends Component {
+class PortfolioItem extends Component {
   constructor(props) {
     super(props)
   }
