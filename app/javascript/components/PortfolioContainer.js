@@ -9,7 +9,6 @@ class PortfolioContainer extends Component {
     super(props)
 
     this.state = {
-      name: '',
       portfolio: [],
       search_results: [],
       active_currency: null,
@@ -36,8 +35,6 @@ class PortfolioContainer extends Component {
     .catch((data) => {
       debugger
     })
-
-    console.log(this.state.search_results)
   }
 
   handleSelect(e){
