@@ -21,7 +21,7 @@ class PortfolioItem extends Component {
 
           <div className="col">
             <div className="headher">Amount In Your Portfolio:</div>
-            <div className="text">${this.props.item.amount_owned}</div>
+            <div className="text">${this.props.item.amount}</div>
           </div>
 
           <div className="col">

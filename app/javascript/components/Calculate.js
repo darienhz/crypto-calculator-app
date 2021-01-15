@@ -8,7 +8,7 @@ class Calculate extends Component {
   render() {
     return(
       <div>
-        <h1>How much of {this.props.active_currency.name} do you own?</h1>
+        <h1>How much of {this.props.active_currency} do you own?</h1>
         <form onSubmit={this.props.handleSubmit}>
           <div className="form-group">
             <label>Amount Owned:</label><br/>
