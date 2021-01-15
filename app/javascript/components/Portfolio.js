@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PortfolioItem from './Portfolio'
 
 class PortfolioContainer extends Component {
   constructor(props) {
