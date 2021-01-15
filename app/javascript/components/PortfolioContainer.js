@@ -69,8 +69,6 @@ class PortfolioContainer extends Component {
     .catch( (data) => {
       debugger
     })
-
-    console.log(this.state)
   }
 
   handleAmount(e){
